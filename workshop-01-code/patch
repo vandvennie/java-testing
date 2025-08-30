@@ -1,0 +1,22 @@
+diff --git a/workshops/workshop01/workshop-01-code/CalculatorSimpleTest.java b/workshops/workshop01/workshop-01-code/CalculatorSimpleTest.java
+index bcf6c4d..03c6a87 100644
+--- a/workshops/workshop01/workshop-01-code/CalculatorSimpleTest.java
++++ b/workshops/workshop01/workshop-01-code/CalculatorSimpleTest.java
+@@ -36,14 +36,14 @@ public class CalculatorSimpleTest {
+ 
+   @Test
+   public void testSubtract() {
+-      Calculator c = new Calculator(3, 4);
++      Calculator c = new Calculator(4, 3);
+       int result = c.subtract();
+-      assertEquals(result, -1, "result should be -1");
++      assertEquals(result, 1, "result should be 1");
+   }
+ 
+   @Test
+   public void testSubtractThrowsException() {
+-      Calculator c = new Calculator(4, 3);
++      Calculator c = new Calculator(3, 4);
+       Throwable exception = assertThrows(
+           ArithmeticException.class, 
+           () -> c.subtract()
