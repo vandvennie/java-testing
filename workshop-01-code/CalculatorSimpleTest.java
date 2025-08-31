@@ -50,6 +50,8 @@ public class CalculatorSimpleTest {
       );
   }
 
+  
+
   /** Adding zero to a number should always
     * give us the same number back.
     */

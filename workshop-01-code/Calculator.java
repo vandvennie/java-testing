@@ -37,7 +37,10 @@ public class Calculator {
     * object.
     */
   public int subtract() {
-    return num2 - num1;
+    if ((num1 - num2)<0) {
+      throw new ArithmeticException("can't return a negative result");
+    }
+    return num1 - num2;
   }
 
   public int multiply() {
